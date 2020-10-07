@@ -13,3 +13,9 @@ let blackCoffee = new BlackCoffee();
 console.log(blackCoffee.Price);
 console.log(blackCoffee.DiscountPrice);
 
+function printOut(c : Coffee) :void
+{
+    console.log(c.CoffeeDrink);
+}
+
+
