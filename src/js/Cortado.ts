@@ -18,6 +18,9 @@ export class Cortado extends Coffee implements Imilk{
     public Strength(): string{
         return "Mild";
     }
+    public CoffeeDrink(): string {
+        return "Cortado";
+    }
 
 
 }

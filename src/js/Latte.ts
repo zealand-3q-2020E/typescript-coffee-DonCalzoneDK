@@ -18,6 +18,9 @@ export class Latte extends Coffee implements Imilk{
     public Strength(): string{
         return "Weak";
     }
+    public CoffeeDrink(): string {
+        return "Latte";
+    }
 
 
 }

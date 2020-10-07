@@ -18,6 +18,10 @@ export class BlackCoffee extends Coffee {
     public Strength(): string{
         return "Strong";
     }
+    
+    public CoffeeDrink(): string {
+        return "Black Coffee";
+    }
 
 
 }
