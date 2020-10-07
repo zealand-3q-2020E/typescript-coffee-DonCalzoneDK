@@ -1,12 +1,15 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
 
-function greeter(person: Person): string {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-let user: Person = { firstName: "John", lastName: "Doe" };
+import { Cortado } from "./Cortado";
+import { Coffee } from "./Coffee";
+import { Latte } from "./Latte";
+import { BlackCoffee } from "./BlackCoffee";
 
-let element: HTMLDivElement = <HTMLDivElement> document.getElementById("content");
-element.innerHTML = greeter(user);
+
+let cortado = new Cortado();
+console.log(cortado.Price)
+let latte = new Latte();
+console.log(latte.Price)
+let blackCoffee = new BlackCoffee();
+console.log(blackCoffee.Price);
+console.log(blackCoffee.DiscountPrice);
+

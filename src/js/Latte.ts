@@ -1,7 +1,7 @@
 import {Coffee} from "./Coffee";
 import {Imilk} from "./Imilk";
 
-abstract class Latte extends Coffee implements Imilk{
+export class Latte extends Coffee implements Imilk{
     
     MlMilk(){
         return 100;
@@ -11,7 +11,7 @@ abstract class Latte extends Coffee implements Imilk{
         return 40;
     }
 
-    constructor(discount:number){
+    constructor(discount:number=0){
         super(discount)
     }
     
