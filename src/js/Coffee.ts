@@ -5,12 +5,14 @@ export abstract class Coffee{
     public Discount: number;
     
     /**Abstract Method Price() */
-    public abstract Price(): Number;
+    public abstract Price(): number;
     
     /**Method for Coffee Strength */
     public Strength(): string{
         return "Mild"
     }
+    /**abstract method to return type of coffee drink */
+    public abstract CoffeeDrink(): string;
     
     /**Constructor that takes parameter (discount:number) and sets
      * the "discount" property
@@ -18,6 +20,6 @@ export abstract class Coffee{
     constructor (dicount:number){
         this.Discount = dicount;
     }
-    public abstract CoffeeDrink(): string;
+    
 
 }

@@ -2,16 +2,13 @@ import {Coffee} from "./Coffee";
 
 export class BlackCoffee extends Coffee {
     
-    public Price(): number{
-        return 20;
-    }
 
-    public DiscountPrice(): number{
+    public Price(): number{
         let result: number =20 - this.Discount;
         return (result);
     }
 
-    constructor(discount:number=4){
+    constructor(discount:number=0){
         super(discount)
     }
     
